@@ -4,10 +4,10 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
-project_name = "customer_segmentation_a_retail_chain"
+project_name = "customer_segmentation"
 
 list_of_files = [
-    ".github/workflows/main.yaml",
+    ".github/workflows",
     "config/params.yaml",
     "config/mlflow_config.yaml",
     "data_schema/schema.yaml",
@@ -57,6 +57,7 @@ list_of_files = [
     f"src/{project_name}/prediction_output/.gitkeep",
     f"src/{project_name}/valid_data/.gitkeep",
 
+    ".gitignore",
     "app/serve.py",
     "Dockerfile",
     "main.py",
